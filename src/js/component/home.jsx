@@ -1,26 +1,20 @@
 import React from "react";
+import TrafficLight from "./trafficLight";
+import '../../styles/index.css';
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  return (
+    <div className="container">
+       <h1>¡Be careful on the road!</h1>
+      <TrafficLight /> 
+	 <img
+        src="https://cdn-icons-png.flaticon.com/512/564/564619.png"
+        alt="Cuidado Sign"
+        width="100"
+        height="100"
+      />
+    </div>
+  );
 };
 
 export default Home;
